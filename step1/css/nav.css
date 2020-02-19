@@ -15,61 +15,57 @@
     flex: 1;
 }
 
-/* nav__menu-item */
+/* nav__item */
 
-.nav__menu-item {
+.nav__item {
     padding: 16px;
     color: #ffffff;
+    background: #111111;
     text-decoration: none;
 }
 
-.nav__menu-item:hover {
+.nav__item:hover {
     color: #111111;
     background: #eeeeee;
 }
 
-.nav__menu-item--right {
+.nav__item--block {
+    display: block;
+}
+
+.nav__item--right {
     margin-left: auto;
 }
 
-/* nav__menu-dropdown */
+/* nav__dropdown */
 
-.nav__menu-dropdown {
+.nav__dropdown {
     display: inline-block;
 }
 
-.nav__menu-dropdown-button {
+/* nav__dropdown-button */
+
+.nav__dropdown-button {
     display: inline-block;
     padding: 16px;
     color: #ffffff;
     text-decoration: none;
 }
 
-.nav__menu-dropdown:hover .nav__menu-dropdown-button {
+.nav__dropdown:hover .nav__dropdown-button {
     color: #111111;
     background: #eeeeee;
 }
 
-.nav__menu-dropdown-content {
+/* nav__dropdown-content */
+
+.nav__dropdown-content {
     position: absolute;
     display: none;
 }
 
-.nav__menu-dropdown:hover .nav__menu-dropdown-content {
+.nav__dropdown:hover .nav__dropdown-content {
     display: block;
-}
-
-.nav__menu-dropdown-content-item {
-    display: block;
-    padding: 16px;
-    color: #111111;
-    background: #eeeeee;
-    text-decoration: none;
-}
-
-.nav__menu-dropdown-content-item:hover {
-    color: #eeeeee;
-    background: #111111;
 }
 
 /* .nav-mobile */
@@ -96,29 +92,27 @@
     .nav-mobile__menu {
         display: flex;
     }
-    /* nav-mobile__menu-item */
-    .nav-mobile__menu-item {
+    /* nav-mobile__item */
+    .nav-mobile__item {
         color: #ffffff;
         text-decoration: none;
         padding: 16px;
     }
-    /* nav-mobile__menu-dropdown */
-    .nav-mobile__menu-dropdown {
-        display: none;
-    }
-    /* nav-mobile__menu-dropdown-button */
-    .nav-mobile__menu-dropdown-button {
-        color: #ffffff;
-        text-decoration: none;
-        margin-left: auto;
-        padding: 16px;
-    }
-    /* nav-mobile__menu-dropdown-item */
-    .nav-mobile__menu-dropdown-item {
+    .nav-mobile__item--block {
         display: block;
+    }
+    
+    .nav-mobile__item--full {
+        width: 100%;
+    }
+    /* nav-mobile__dropdown */
+    .nav-mobile__dropdown {
+        display: block;
+    }
+    /* nav-mobile__dropdown-button */
+    .nav-mobile__dropdown-button {
         color: #ffffff;
-        padding: 16px;
         text-decoration: none;
-        text-align: center;
+        padding: 16px;
     }
 }
