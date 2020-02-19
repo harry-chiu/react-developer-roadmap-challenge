@@ -1,0 +1,169 @@
+/* tour */
+
+.tour {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* tour__container */
+
+.tour__container {
+    max-width: 720px;
+    margin: auto;
+}
+
+/* tour__title */
+
+.tour__title {
+    font-size: xx-large;
+}
+
+/* tour__subtitle */
+
+.tour__subtitle {
+    display: block;
+    color: #999999;
+    margin: 16px 0;
+}
+
+/* tour__list */
+
+.tour__list {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 32px 8px;
+}
+
+.tour__list--white {
+    color: #111111;
+    background: #ffffff;
+}
+
+.tour__list--flex {
+    display: flex;
+}
+
+/* .tour__list-item */
+
+.tour__list-item {
+    padding: 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tour__list-item:last-child {
+    border-bottom: none;
+}
+
+.tour__list-item--no-border {
+    border-bottom: none;
+}
+
+/* tour__tag */
+
+.tour__tag {
+    background: #ff0000;
+    color: #ffffff;
+    padding: 4px;
+    font-size: small;
+}
+
+/* tour__badge */
+
+.tour__badge {
+    background: #111111;
+    color: #ffffff;
+    padding: 0 6px;
+    height: auto;
+    border-radius: 50%;
+    float: right;
+}
+
+/* tour__card-list */
+
+.tour__card-list {
+    display: flex;
+    padding: 8px 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+/* tour__card-list-item */
+
+.tour__card-list-item {
+    margin: 8px;
+}
+
+/* tour__card */
+
+.tour__card {
+    text-align: left;
+    color: #111111;
+}
+
+/* tour__card-image */
+
+.tour__card-image {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.tour__card-image:hover {
+    opacity: 0.7;
+}
+
+/* tour__card-content */
+
+.tour__card-content {
+    padding: 16px;
+    background: #ffffff;
+}
+
+/* tour__card-title */
+
+.tour__card-title {
+    font-size: large;
+}
+
+/* tour__card-subtitle */
+
+.tour__card-subtitle {
+    color: #999999;
+}
+
+/* tour__card-description */
+
+.tour__card-description {
+    font-size: smaller;
+}
+
+/* tour__button */
+
+.tour__button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tour__button:hover {
+    background: #aaaaaa;
+    color: #111111;
+}
+
+@media screen and (max-width: 720px) {
+    /* tour__list */
+    .tour__list {
+        margin: 32px 0;
+    }
+    /* tour__card-list */
+    .tour__card-list {
+        flex-direction: column;
+    }
+    /* tour__card-list-item */
+    .tour__card-list-item {
+        margin: 8px 0; 
+    }
+}
