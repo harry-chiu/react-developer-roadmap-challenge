@@ -88,6 +88,7 @@
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
     }
     /* nav-mobile__menu */
     .nav-mobile__menu {
@@ -109,6 +110,9 @@
     /* nav-mobile__dropdown */
     .nav-mobile__dropdown {
         display: none;
+    }
+    .nav-mobile__dropdown--active {
+        display: block;
     }
     /* nav-mobile__dropdown-button */
     .nav-mobile__dropdown-button {
