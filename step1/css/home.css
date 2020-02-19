@@ -1,7 +1,13 @@
+/* home */
+
+.home {
+    margin-top: 50px;
+}
+
 /* home__slide-image */
 
 .home__slide-image {
-    width: auto;
+    width: 100%;
     height: 100vh;
     background-image: url("../img/demo-img-1.jpg");
     background-repeat: no-repeat;
@@ -31,4 +37,11 @@
 .home__description {
     max-width: 300px;
     font-size: medium;
+}
+
+@media screen and (max-width: 720px) {
+    /* home__slide-image */
+    .home__slide-image {
+        height: auto;
+    }
 }
