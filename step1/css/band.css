@@ -34,8 +34,9 @@
 /* band__gallery */
 
 .band__gallery {
+    margin-top: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* band__card-title */
@@ -47,9 +48,9 @@
 /* band__image */
 
 .band__image {
-    max-width: 240px;
+    max-width: 160px;
     height: auto;
-    margin: 8px;
+    border-radius: 0.25em;
 }
 
 @media screen and (max-width: 720px) {
