@@ -47,10 +47,10 @@
 /* nav__dropdown-button */
 
 .nav__dropdown-button {
-    display: inline-block;
     padding: 16px;
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav__dropdown:hover .nav__dropdown-button {
@@ -119,5 +119,6 @@
         color: #ffffff;
         text-decoration: none;
         padding: 16px;
+        cursor: pointer;
     }
 }
