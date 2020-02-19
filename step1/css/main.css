@@ -8,9 +8,9 @@
     background-size: cover;
 }
 
-/* main__slide-image-textarea */
+/* main__container */
 
-.main__slide-image-textarea {
+.main__container {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -20,15 +20,15 @@
     color: #ffffff;
 }
 
-/* main__slide-image-title */
+/* main__title */
 
-.main__slide-imge-title {
+.main__title {
     font-size: large;
 }
 
-/* main__slide-image-description */
+/* main__description */
 
-.main__slide-image-description {
+.main__description {
     max-width: 300px;
     font-size: medium;
 }
