@@ -4,7 +4,7 @@ Refer to [react-developer-roadmap]("https://github.com/adam-golab/react-develope
 
 ## Steps
 
-- 1. Basic One-Page RWD Website
+- Basic One-Page RWD Website
     - HTML
     - CSS
     - JavaScript
