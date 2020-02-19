@@ -1,5 +1,3 @@
-
-
 let collapse = false;
 
 hideDropdown = () => {
