@@ -1,0 +1,124 @@
+/* nav */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* nav__menu */
+
+.nav__menu {
+    display: flex;
+    flex: 1;
+}
+
+/* nav__menu-item */
+
+.nav__menu-item {
+    padding: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__menu-item:hover {
+    color: #111111;
+    background: #eeeeee;
+}
+
+.nav__menu-item--right {
+    margin-left: auto;
+}
+
+/* nav__menu-dropdown */
+
+.nav__menu-dropdown {
+    display: inline-block;
+}
+
+.nav__menu-dropdown-button {
+    display: inline-block;
+    padding: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__menu-dropdown:hover .nav__menu-dropdown-button {
+    color: #111111;
+    background: #eeeeee;
+}
+
+.nav__menu-dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.nav__menu-dropdown:hover .nav__menu-dropdown-content {
+    display: block;
+}
+
+.nav__menu-dropdown-content-item {
+    display: block;
+    padding: 16px;
+    color: #111111;
+    background: #eeeeee;
+    text-decoration: none;
+}
+
+.nav__menu-dropdown-content-item:hover {
+    color: #eeeeee;
+    background: #111111;
+}
+
+/* .nav-mobile */
+
+.nav-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    /* nav__menu */
+    .nav__menu {
+        display: none;
+    }
+    /* nav-mobile */
+    .nav-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+    }
+    /* nav-mobile__menu */
+    .nav-mobile__menu {
+        display: flex;
+    }
+    /* nav-mobile__menu-item */
+    .nav-mobile__menu-item {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 16px;
+    }
+    /* nav-mobile__menu-dropdown */
+    .nav-mobile__menu-dropdown {
+        display: none;
+    }
+    /* nav-mobile__menu-dropdown-button */
+    .nav-mobile__menu-dropdown-button {
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: auto;
+        padding: 16px;
+    }
+    /* nav-mobile__menu-dropdown-item */
+    .nav-mobile__menu-dropdown-item {
+        display: block;
+        color: #ffffff;
+        padding: 16px;
+        text-decoration: none;
+        text-align: center;
+    }
+}

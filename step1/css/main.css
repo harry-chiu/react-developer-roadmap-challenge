@@ -1,0 +1,34 @@
+/* main__slide-image */
+
+.main__slide-image {
+    width: auto;
+    height: 100vh;
+    background-image: url("../img/demo-img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main__slide-image-textarea */
+
+.main__slide-image-textarea {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10% 0;
+    color: #ffffff;
+}
+
+/* main__slide-image-title */
+
+.main__slide-imge-title {
+    font-size: large;
+}
+
+/* main__slide-image-description */
+
+.main__slide-image-description {
+    max-width: 300px;
+    font-size: medium;
+}
