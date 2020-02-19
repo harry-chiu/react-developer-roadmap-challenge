@@ -1,0 +1,104 @@
+/* contact */
+
+.contact {
+    background: #ffffff;
+    text-align: center;
+}
+
+/* contact__container */
+
+.contact__container {
+    max-width: 720px;
+    margin: auto;
+    padding: 36px 0;
+}
+
+/* contact__title */
+
+.contact__title {
+    font-size: xx-large;
+}
+
+/* contact__subtitle */
+
+.contact__subtitle {
+    display: inline-block;
+    color: #999999;
+}
+
+/* contact__row */
+
+.contact__row {
+    display: flex;
+    justify-content: space-around;
+    margin: 32px 0;
+}
+
+/* contact__column */
+
+.contact__column {
+    flex: 1;
+    text-align: left;
+}
+
+/* contact__list */
+
+.contact__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* contact__list-item */
+
+.contact__list-item {
+    margin-bottom: 8px;
+}
+
+.contact__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact__list-item--right {
+    float: right;
+}
+
+/* contact__icon */
+
+.contact__icon {
+    display: inline-block;
+    margin-right: 8px;
+    min-width: 16px;
+}
+
+/* contact__input */
+
+.contact__input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+}
+
+/* contact__button */
+
+.contact__button {
+    display: inline-block;
+    background: #111111;
+    color: #ffffff;
+    padding: 8px 24px;
+    text-decoration: none;
+}
+.contact__button:hover {
+    background: #cccccc;
+    color: #111111;
+}
+
+@media screen and (max-width: 720px) {
+    /* contact__row */
+    .contact__row {
+        flex-direction: column;
+    }
+    /* contact__column */
+    .contact__column {
+        padding: 0 16px;
+    }
+}
