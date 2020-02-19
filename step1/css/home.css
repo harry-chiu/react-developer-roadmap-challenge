@@ -1,6 +1,6 @@
-/* main__slide-image */
+/* home__slide-image */
 
-.main__slide-image {
+.home__slide-image {
     width: auto;
     height: 100vh;
     background-image: url("../img/demo-img-1.jpg");
@@ -8,9 +8,9 @@
     background-size: cover;
 }
 
-/* main__container */
+/* home__container */
 
-.main__container {
+.home__container {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -20,15 +20,15 @@
     color: #ffffff;
 }
 
-/* main__title */
+/* home__title */
 
-.main__title {
+.home__title {
     font-size: large;
 }
 
-/* main__description */
+/* home__description */
 
-.main__description {
+.home__description {
     max-width: 300px;
     font-size: medium;
 }

@@ -107,7 +107,7 @@
     }
     /* nav-mobile__dropdown */
     .nav-mobile__dropdown {
-        display: block;
+        display: none;
     }
     /* nav-mobile__dropdown-button */
     .nav-mobile__dropdown-button {
