@@ -44,4 +44,12 @@
     .home__slide-image {
         height: auto;
     }
+    /* home__title */
+    .home__title {
+        visibility: hidden;
+    }
+    /* home__description */
+    .home__description {
+        visibility: hidden;
+    }
 }
