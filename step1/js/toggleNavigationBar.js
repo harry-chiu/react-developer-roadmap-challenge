@@ -14,6 +14,9 @@ showDropdown = () => {
     collapse = true;
 };
 
+let navMobileButtons = document.querySelectorAll(".nav-mobile__item");
+navMobileButtons.forEach(button => button.addEventListener("click", hideDropdown));
+
 let dropdownButton = document.querySelector("#nav-dropdown-button");
 dropdownButton.addEventListener("click", () => {
     if (collapse) {
@@ -21,8 +24,4 @@ dropdownButton.addEventListener("click", () => {
     } else {
         showDropdown();
     };
-    collapse = !collapse;
 });
-
-let navMobileButtons = document.querySelectorAll(".nav-mobile__item");
-navMobileButtons.forEach(button => button.addEventListener("click", hideDropdown));
