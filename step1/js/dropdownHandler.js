@@ -1,4 +1,4 @@
-class NavigationBar {
+class DropdownHandler {
     constructor() {
         this.collapse = false;
         this.dropdown = document.querySelector("#nav-dropdown");
@@ -31,6 +31,6 @@ class NavigationBar {
     };
 };
 
-const navigationBar = new NavigationBar();
-navigationBar.bindHideDropdown();
-navigationBar.bindToggleCollapse();
+const dropdownHandler = new DropdownHandler();
+dropdownHandler.bindHideDropdown();
+dropdownHandler.bindToggleCollapse();
