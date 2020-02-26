@@ -4,7 +4,14 @@ Refer to [react-developer-roadmap](https://github.com/adam-golab/react-developer
 
 ## Steps
 
-- Basic One-Page RWD Website
+- Step 1. Basic One-Page RWD Website
     - HTML
     - CSS
     - JavaScript
+
+- Step 2. AJAX and Fetch
+    - GET
+    - POST
+    - PUT
+    - PATCH
+    - DELETE

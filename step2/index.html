@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR and Fetch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body class="container-fluid">
+    <div class="row d-flex flex-xs-column flex-lg-row">
+        <div class="col-xs-12 col-lg-6">
+            <h1>XHR</h1>
+            <button id="xhr-get" type="button" class="btn btn-secondary">GET</button>
+            <button id="xhr-post" type="button" class="btn btn-secondary">POST</button>
+            <button id="xhr-put" type="button" class="btn btn-secondary">PUT</button>
+            <button id="xhr-patch" type="button" class="btn btn-secondary">PATCH</button>
+            <button id="xhr-delete" type="button" class="btn btn-secondary">DELETE</button>
+            <hr />
+            <h1>Fetch</h1>
+            <button id="fetch-get" type="button" class="btn btn-secondary">GET</button>
+            <button id="fetch-post" type="button" class="btn btn-secondary">POST</button>
+            <button id="fetch-put" type="button" class="btn btn-secondary">PUT</button>
+            <button id="fetch-patch" type="button" class="btn btn-secondary">PATCH</button>
+            <button id="fetch-delete" type="button" class="btn btn-secondary">DELETE</button>
+            <hr />
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <h1>Response</h1>
+            <hr />
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="./js/xhr.js"></script>
+    <script src="./js/fetch.js"></script>
+</body>
+
+</html>
