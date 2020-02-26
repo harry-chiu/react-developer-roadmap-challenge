@@ -1,25 +1,36 @@
-let collapse = false;
-
-hideDropdown = () => {
-    let dropdown = document.querySelector("#nav-dropdown");
-    dropdown.className = "nav-mobile__dropdown";
-    collapse = false;
-};
-
-showDropdown = () => {
-    let dropdown = document.querySelector("#nav-dropdown");
-    dropdown.className = "nav-mobile__dropdown nav-mobile__dropdown--active";
-    collapse = true;
-};
-
-let navMobileButtons = document.querySelectorAll(".nav-mobile__item");
-navMobileButtons.forEach(button => button.addEventListener("click", hideDropdown));
-
-let dropdownButton = document.querySelector("#nav-dropdown-button");
-dropdownButton.addEventListener("click", () => {
-    if (collapse) {
-        hideDropdown();
-    } else {
-        showDropdown();
+class NavigationBar {
+    constructor() {
+        this.collapse = false;
+        this.dropdown = document.querySelector("#nav-dropdown");
+        this.dropdownButton = document.querySelector("#nav-dropdown-button");
+        this.navMobileButtons = document.querySelectorAll(".nav-mobile__item");
     };
-});
+
+    hideDropdown = () => {
+        this.dropdown.className = "nav-mobile__dropdown";
+        this.collapse = false;
+    };
+
+    showDropdown = () => {
+        this.dropdown.className = "nav-mobile__dropdown nav-mobile__dropdown--active";
+        this.collapse = true;
+    };
+
+    bindHideDropdown = () => {
+        this.navMobileButtons.forEach(button => button.addEventListener("click", this.hideDropdown));
+    };
+
+    bindToggleCollapse = () => {
+        this.dropdownButton.addEventListener("click", () => {
+            if (this.collapse) {
+                this.hideDropdown();
+            } else {
+                this.showDropdown();
+            };
+        });
+    };
+};
+
+const navigationBar = new NavigationBar();
+navigationBar.bindHideDropdown();
+navigationBar.bindToggleCollapse();
