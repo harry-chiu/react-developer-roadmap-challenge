@@ -1,0 +1,33 @@
+$grey-border: 1px solid #dddddd;
+$default-padding: 16px;
+$card-title-font-size: 24px;
+$card-content-font-size: 16px;
+$small: 300px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+}
+
+.card {
+  display: inline-block;
+  min-width: $small;
+  border: $grey-border;
+  background: #ffffff;
+
+  .card-title {
+    padding: $default-padding;
+    font-size: $card-title-font-size;
+    border-bottom: $grey-border;
+  }
+  .card-content {
+    padding: $default-padding;
+    font-size: $card-content-font-size;
+  }
+}
